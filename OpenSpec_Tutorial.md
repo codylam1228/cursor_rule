@@ -26,7 +26,7 @@ Find the function of `/openspec proposal`
 
 Type the prompt
 ```prompt
-I have discovered some problems in this project. Could you please help me please create an openspec change proposal for each problem that i discover.
+I have discovered some problems in this project. Could you please help me create an openspec change proposal for each problem that i discover.
 ```
 
 ### 2. After it has generated all the necessary docs. You can let it do it for you.
