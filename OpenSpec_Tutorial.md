@@ -19,15 +19,6 @@ Type the prompt
 ``` prompt
 I want <functionality>. please create an openspec change proposal for this feature.
 ```
-
-#### If you would like to add some features or some modifications or something else. (Cont.)
-Find the function of `/openspec proposal`
-
-Type the prompt
-``` prompt
-I want <functionality>. please create an openspec change proposal for this feature.
-```
-
 #### If you already have a list problem that you discover in the project (Cont.)
 Paste all the problems in the prompt box/paste the problem file
 
