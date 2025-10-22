@@ -88,4 +88,4 @@ openspec list
 openspec archive XXXX --yes
 openspec validate --strict
 openspec list
-```bash
+```
