@@ -5,7 +5,7 @@ Type the prompt
 ``` prompt
 Please read openspec/project.md and help me fill it out with details about my project, tech stack, and conventions
 ``` 
-如果唔滿意可以再講
+If the prompt is not your expected. Please continoue ask question
 ``` prompt
 My ultimate goal is to <Your Goal>. Please read the openspec/project.md file and help me further improve it by adding details about my project, technology stack, and conventions.
 ```
@@ -14,6 +14,7 @@ My ultimate goal is to <Your Goal>. Please read the openspec/project.md file and
 ### 1. Write what you need?
 #### If you would like to add some features or some modifications or something else.
 Find the function of `/openspec proposal`
+
 Type the prompt
 ``` prompt
 I want <functionality>. please create an openspec change proposal for this feature.
@@ -21,6 +22,7 @@ I want <functionality>. please create an openspec change proposal for this featu
 
 #### If you would like to add some features or some modifications or something else. (Cont.)
 Find the function of `/openspec proposal`
+
 Type the prompt
 ``` prompt
 I want <functionality>. please create an openspec change proposal for this feature.
@@ -28,7 +30,9 @@ I want <functionality>. please create an openspec change proposal for this featu
 
 #### If you already have a list problem that you discover in the project (Cont.)
 Paste all the problems in the prompt box/paste the problem file
+
 Find the function of `/openspec proposal`
+
 Type the prompt
 ```prompt
 I have discovered some problems in this project. Could you please help me please create an openspec change proposal for each problem that i discover.
@@ -40,14 +44,21 @@ I have discovered some problems in this project. Could you please help me please
 openspec list
 ```
 The result will be similar to the below:
+
 Changes:
+
   XXXX                0/5 tasks
+  
   YYYY                0/8 tasks
+  
   ZZZZ                 0/20 tasks
+  
 
 #### Apply the proposal in the openspec
 copy the name of the proposal (like the XXXX)
+
 Find the function of `/openspec apply`
+
 Type the prompt
 ```prompt
 please implement the XXXX according to the openspec-proposal
@@ -58,7 +69,9 @@ After completing each major task, summarize what was implemented and where the c
 
 #### if you found that the function is not good enough
 copy the name of the proposal (like the XXXX)
+
 Find the function of `/openspec apply`
+
 Type the prompt
 ```prompt
 After applying the proposal of XXXX, I found that <Your Problem>. Please help me to fix this problem and help me to add the problem that I discovered.
@@ -69,14 +82,21 @@ After applying the proposal of XXXX, I found that <Your Problem>. Please help me
 openspec list
 ```
 The result will be similar to the below:
+
 Changes:
+
   XXXX                ✓ Complete
+  
   YYYY                0/8 tasks
+  
   ZZZZ                 0/20 tasks
+  
 
 #### archive the folder
 copy the name of the proposal (like the XXXX)
+
 Find the function of `/openspec archive`
+
 Type the prompt
 ```prompt
 Please help me to archive the XXXX
