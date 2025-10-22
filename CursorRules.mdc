@@ -12,7 +12,8 @@ priority: 5
 - Install packages using `uv add` instead of `uv pip install` or `pip install`.
 
 ## Web Tools
-- Utilize default web search tools and Chrome DevTools for researching external references.
+- Utilize default web search tools for researching external references.
+- Utilize Chrome DevTools to control and inspect a live Chrome browser if neccessary.
 
 ## Workspace and Feedback Practices
 - Verify all file paths before creating or editing files to ensure accuracy.
