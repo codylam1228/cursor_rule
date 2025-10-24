@@ -11,9 +11,8 @@ priority: 5
 - Run Python code with `uv run` instead of `uv python`.
 - Install packages using `uv add` instead of `uv pip install` or `pip install`.
 
-## Web Tools
-- Utilize default web search tools for researching external references.
-- Utilize Chrome DevTools to control and inspect a live Chrome browser if neccessary.
+## Context 7
+Always use context7 when I need code generation, setup or configuration steps, or library/API documentation. This means you should automatically use the Context7 MCP tools to resolve library id and get library docs without me having to explicitly ask.
 
 ## Workspace and Feedback Practices
 - Verify all file paths before creating or editing files to ensure accuracy.
@@ -44,10 +43,3 @@ priority: 5
 
 ## Git
 - Do not execute `git commit` or `git push`.
-
-## References
-- uv: https://github.com/astral-sh/uv
-- Chrome DevTools: https://github.com/ChromeDevTools/chrome-devtools-mcp
-- OpenSpec: https://github.com/Fission-AI/OpenSpec
-- Interactive Feedback MCP: https://github.com/noopstudios/interactive-feedback-mcp
-- Enhanced IF-MCP: https://github.com/codylam1228/interactive-feedback-mcp-eng-edition
