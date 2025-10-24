@@ -12,7 +12,7 @@ priority: 5
 - Install packages using `uv add` instead of `uv pip install` or `pip install`.
 
 ## Context 7
-Always use context7 when I need code generation, setup or configuration steps, or library/API documentation. This means you should automatically use the Context7 MCP tools to resolve library id and get library docs without me having to explicitly ask.
+- Always use context7 when I need code generation, setup or configuration steps, or library/API documentation. This means you should automatically use the Context7 MCP tools to resolve library id and get library docs without me having to explicitly ask.
 
 ## Workspace and Feedback Practices
 - Verify all file paths before creating or editing files to ensure accuracy.
@@ -43,3 +43,11 @@ Always use context7 when I need code generation, setup or configuration steps, o
 
 ## Git
 - Do not execute `git commit` or `git push`.
+
+## sequential thinking
+Requirements: - Use `sequential-thinking` to plan all steps, thinking, and branching.
+- Use @Web for searches, and perform search verification before each round of thinking.
+- Use the fetch tool to view the details of the searched web pages.
+- Perform at least five rounds of thinking, and engage in divergent brainstorming and branching.
+- Reflect on whether your decision was correct based on the query results in each round.
+- Provide high-value use cases, detailing why they are valuable and how they can be implemented.
