@@ -4,3 +4,5 @@
 - OpenSpec: https://github.com/Fission-AI/OpenSpec
 - Interactive Feedback MCP: https://github.com/noopstudios/interactive-feedback-mcp
 - Context 7: https://github.com/upstash/context7
+- Sequential Thinking: https://www.npmjs.com/package/@modelcontextprotocol/server-sequential-thinking
+  * https://zhuanlan.zhihu.com/p/1895944861741463294
