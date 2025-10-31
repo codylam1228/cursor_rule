@@ -16,7 +16,6 @@ These rules are mandatory and must be followed strictly in all interactions with
 ## Thinking and Planning Process
 - Employ `sequential-thinking` to meticulously plan all steps, reasoning, and potential branching paths before execution.
 - Integrate `web search` and `context7` tools for information gathering; always perform search verification (e.g., cross-check results for accuracy and relevance) before advancing to the next round of thinking.
-- Use the `fetch` tool to retrieve and review detailed content from searched web pages or resources.
 - Conduct at least five rounds of structured thinking per task: include divergent brainstorming, explore alternative approaches, and branch into "what-if" scenarios.
 - After each round, reflect critically on your decisions—evaluate based on query results, identify any gaps or errors, and adjust your approach accordingly.
 
