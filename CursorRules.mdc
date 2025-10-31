@@ -6,48 +6,55 @@ priority: 5
 ---
 # Cursor Global Rules Cheatsheet [NOT NEGLIGIBLE]
 
-## Python Tooling
-- Use `uv` as the primary Python command; fallback to `python` or `python3` if `uv` is unavailable.
-- Run Python code with `uv run` instead of `uv python`.
-- Install packages using `uv add` instead of `uv pip install` or `pip install`.
+These rules are mandatory and must be followed strictly in all interactions within the Cursor development environment. They ensure consistency, accuracy, and efficiency in development tasks. Violating these rules may lead to suboptimal outcomes—always refer back to this cheatsheet as needed.
 
-## Context 7
-- Always use context7 when I need code generation, setup or configuration steps, or library/API documentation. This means you should automatically use the Context7 MCP tools to resolve library id and get library docs without me having to explicitly ask.
+## Python Environment Management
+- Prioritize `uv` as the primary Python command; fallback to `python` or `python3` only if `uv` is unavailable or incompatible.
+- Execute Python code using `uv run` (e.g., `uv run script.py`); avoid `uv python` or direct `python` invocation unless necessary.
+- Install packages exclusively with `uv add` (e.g., `uv add requests`); do not use `uv pip install`, `pip install`, or other package managers.
 
-## Workspace and Feedback Practices
-- Verify all file paths before creating or editing files to ensure accuracy.
-- Use the `interactive_feedback` MCP command to request clarification from the user when instructions are unclear or incomplete.
-- Pose specific follow-up questions via `interactive_feedback` to resolve unclear requirements, avoiding assumptions.
-- Understand the user’s goals and project context before proposing solutions.
-- Communicate in a clear, concise, and professional manner, avoiding unnecessary repetition.
-- For large files, read incrementally from the last unread line until the file is fully processed.
-- Restrict edits to the relevant context, adhering to applicable specification documents.
-- Before finalizing a task, use `interactive_feedback` to solicit user feedback. If no feedback is provided, complete the task without repeating the command.
-- For recommendations or task summaries, invoke `interactive_feedback`. If no response is received, conclude the task without repeating the command.
-- When possible, provide predefined options through `interactive_feedback` to streamline user decisions.
+## Thinking and Planning Process
+- Employ `sequential-thinking` to meticulously plan all steps, reasoning, and potential branching paths before execution.
+- Integrate `web search` and `context7` tools for information gathering; always perform search verification (e.g., cross-check results for accuracy and relevance) before advancing to the next round of thinking.
+- Use the `fetch` tool to retrieve and review detailed content from searched web pages or resources.
+- Conduct at least five rounds of structured thinking per task: include divergent brainstorming, explore alternative approaches, and branch into "what-if" scenarios.
+- After each round, reflect critically on your decisions—evaluate based on query results, identify any gaps or errors, and adjust your approach accordingly.
 
-## OpenSpec
-- Drive development using OpenSpec documentation stored in the `openspec` folder.
-- Use OpenSpec slash commands (`/openspec-proposal`, `/openspec-apply`, `/openspec-archive`) for specification lifecycle actions.
-- Create a dedicated OpenSpec change proposal for each issue, including thorough analysis in English.
-- After issuing `openspec list`, wait 20 seconds before proceeding.
-- Update OpenSpec proposals when new user input or requirements are provided.
-- Open `@/openspec/AGENTS.md` when the request involves:
-  - Planning, proposals, or terms like "spec," "change," or "plan."
-  - New capabilities, breaking changes, architecture shifts, or significant performance/security work.
-  - Unclear requirements needing authoritative specification before coding.
-- Use `@/openspec/AGENTS.md` to understand:
+## Tool and Context Usage
+- Automatically invoke `context7` for tasks involving code generation, setup/configuration steps, or library/API documentation. This includes resolving library IDs and fetching relevant docs without explicit user prompts.
+- Verify all file paths (e.g., via directory listings or checks) before any creation, editing, or reference to ensure they are accurate and exist as expected.
+
+## User Interaction and Feedback
+- Use the `interactive_feedback` MCP command to request clarification when instructions are ambiguous, incomplete, or conflicting.
+- Formulate specific, targeted follow-up questions in `interactive_feedback` to resolve uncertainties—avoid making assumptions about user intent.
+- Deeply analyze the user’s goals, project context, and overall objectives before proposing any solutions or changes.
+- Communicate in a clear, concise, professional tone: be direct, avoid redundancy, and structure responses logically (e.g., use bullet points or numbered lists for steps).
+- For recommendations, task summaries, or decision points, invoke `interactive_feedback` to solicit user input. If no response is received, proceed to conclude the task without repeating the command.
+- When appropriate, provide predefined options (e.g., "Option 1: ... Option 2: ...") in `interactive_feedback` to facilitate quicker user decisions.
+- Before finalizing any task or change, use `interactive_feedback` for confirmation. If no feedback is provided, complete the task without repetition.
+
+## File and Edit Handling
+- For large files, process incrementally: read from the last unread line onward until the entire file is covered, to manage memory and focus efficiently.
+- Limit edits strictly to the relevant sections or context; always adhere to any applicable specification documents or guidelines.
+- Do not create additional files unless explicitly instructed by the user or if it is critically necessary for task completion (e.g., essential configuration files without alternatives).
+- Never execute `git commit` or `git push` commands—leave version control actions to the user.
+
+## OpenSpec Integration
+- Drive all development decisions using OpenSpec documentation located in the `openspec` folder as the authoritative source.
+- Utilize OpenSpec slash commands for lifecycle management:
+  - `/openspec-proposal`: To create new proposals.
+  - `/openspec-apply`: To implement approved changes.
+  - `/openspec-archive`: To archive completed or obsolete specs.
+- For each issue or change, generate a dedicated OpenSpec change proposal, including a thorough analysis in clear English (covering impact, rationale, alternatives, and risks).
+- After executing `openspec list`, pause for at least 20 seconds to allow for processing or user review before continuing.
+- Update existing OpenSpec proposals promptly when new user input, requirements, or feedback is received.
+- Automatically open `@/openspec/AGENTS.md` in scenarios involving:
+  - Planning, proposals, or keywords like "spec," "change," "plan," or "architecture."
+  - Introducing new capabilities, breaking changes, major architecture shifts, or significant work on performance/security.
+  - Unclear or evolving requirements that require formal specification before proceeding to coding.
+- Refer to `@/openspec/AGENTS.md` for guidance on:
   - Creating and applying change proposals.
-  - Specification format and conventions.
-  - Project structure and guidelines.
+  - Adhering to specification formats, conventions, and best practices.
+  - Understanding project structure, guidelines, and overall workflow.
 
-## Git
-- Do not execute `git commit` or `git push`.
-
-## sequential thinking
-Requirements: - Use `sequential-thinking` to plan all steps, thinking, and branching.
-- Use @Web for searches, and perform search verification before each round of thinking.
-- Use the fetch tool to view the details of the searched web pages.
-- Perform at least five rounds of thinking, and engage in divergent brainstorming and branching.
-- Reflect on whether your decision was correct based on the query results in each round.
-- Provide high-value use cases, detailing why they are valuable and how they can be implemented.
+Adhere to these rules without exception to maintain high-quality, reliable development practices. If a conflict arises between rules, prioritize user safety, project integrity, and explicit instructions.
